@@ -1,0 +1,119 @@
+header {
+  /* background-color: aqua; */
+}
+
+.upper_header {
+  min-height: auto !important;
+}
+
+.banner {
+  flex-direction: row !important;
+  gap: 20px;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.card {
+  width: 300px;
+  margin-top: 30px;
+  overflow: hidden;
+  position: relative;
+}
+
+.card img {
+  width: 100%;
+}
+
+.card .show {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  background-color: rgba(0, 0, 0, 0.411);
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.3rem;
+  opacity: 0;
+  transition: 0.4s;
+}
+
+.card .show:hover {
+  opacity: 1;
+}
+
+.card .show span {
+  background-color: #f0f0f0;
+  color: rgb(2, 41, 80);
+  padding: 3px 20px;
+  font-weight: bold;
+  border-radius: 3px;
+  box-shadow: inset 0px 0px 10px rgba(0, 0, 0, 0.695);
+}
+
+h1 {
+  color: #fff;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.wrong {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  z-index: 2222;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  -webkit-backdrop-filter: blur(6px);
+  backdrop-filter: blur(6px);
+  color: #000;
+  text-shadow: 0px 0px 4px #fff;
+  font-size: 2rem;
+  font-weight: bold;
+  border-radius: 15px;
+  text-align: center;
+}
+
+.wrong img {
+  width: 300px;
+}
+
+@media (min-width: 0px) and (max-width: 1050px) {
+  .banner {
+    padding: 20px 0px !important;
+  }
+}
+
+.wrong form input {
+  width: 260px;
+  background-color: #1c1f2f;
+  border: solid 1px #2f2f2f;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-size: 1rem;
+  text-align: center;
+  padding: 9px 20px;
+}
+
+.wrong form input::placeholder {
+  color: #f0f0f0;
+}
+
+.wrong form button {
+  display: block;
+  margin: auto;
+  font-size: 1.2rem;
+  padding: 3px 30px;
+  font-weight: bold;
+  background-color: #00c4cc;
+  color: #fff;
+  border-radius: 3px;
+  margin:10px auto;
+}

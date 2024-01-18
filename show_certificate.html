@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Coder_Certificate</title>
+        <link rel="stylesheet" href="fontawesome/css/all.min.css">
+        <link rel="stylesheet" href="fontawesome/css/fontawesome.min.css">
+
+        <link rel="icon" href="img/icon.png">
+
+        <link rel="stylesheet" href="fonts/font.css">
+
+        <link rel="stylesheet" href="css/show_certificate.css">
+    </head>
+
+    <body>
+
+        <img src="img/1.png" style="width: 100%;">
+
+        <div class="controls">
+            <a href="index.html" class="btn">
+                <i class="fa-solid fa-house"></i> home
+            </a>
+            <button class="btn print">
+                <i class="fa-solid fa-print"></i> print
+            </button>
+        </div>
+
+<script></script>
+        <script>
+            document.querySelector(".print").onclick = function () {
+                document.querySelector(".controls").style.opacity = 0
+                window.print();
+                setTimeout(function () {
+                    document.querySelector(".controls").style.opacity = 1
+                }, 2000)
+            }
+        </script>
+    </body>
+
+</html>

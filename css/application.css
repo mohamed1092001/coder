@@ -1,0 +1,71 @@
+.application {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 0px;
+  padding-top: 20px;
+}
+
+.application form {
+  width: 550px;
+  background-color: #1c1f2fe5;
+  border-radius: 20px;
+  box-shadow: inset 0px 0px 2px #00c4cc;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  align-content: flex-start;
+  flex-wrap: wrap;
+  padding: 20px;
+  direction: rtl;
+  position: relative;
+  z-index: 221;
+  backdrop-filter: blur(6px);
+  -webkit-backdrop-filter: blur(6px);
+}
+
+.application form input,
+select {
+  box-shadow: 0px 0px 2px #00c4cc;
+  background-color: #1c1f2f;
+  width: 100%;
+  padding: 7px 20px;
+  border-radius: 40px;
+  direction: rtl;
+  color: #fff;
+  margin-bottom: 30px;
+}
+
+.application form input::placeholder {
+  color: #00c4cc;
+}
+
+.application form .dbl-input {
+  width: 48%;
+}
+
+.application form button {
+  background-color: #00c4cc;
+  color: #fff;
+  display: block;
+  width: fit-content;
+  font-size: 19px;
+  padding: 5px 50px;
+  border-radius: 3px;
+  margin: auto;
+}
+
+.application form button:hover{
+    box-shadow:inset 0px 0px 10px #000;
+}
+
+@media (min-width:0px) and (max-width:750px){
+    .application form{
+        width: 90%;
+    }
+}
+@media (min-width:0px) and (max-width:500px){
+    .application form input,select{
+        width: 100% !important;
+    }
+}
